@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-white border-b px-4 py-3">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <Link to="/" className="text-xl font-bold">🛍️ ShopReact</Link>
+        <Link to="/" className="text-xl font-bold">👗 ZyraClothing</Link>
         <div className="flex items-center gap-4">
           {user && <span className="text-sm text-gray-500 hidden md:block">Hi, {user.username}</span>}
           <Link to="/cart" className="relative">
