@@ -8,19 +8,22 @@ import ProtectedRoute from './components/ProtectedRoute'
 import NotFound from './pages/NotFound'
 import { Toaster } from 'react-hot-toast'
 
+// App.jsx — make sure there is NO pt-16 or mt-16 on the Routes wrapper
 export default function App() {
   return (
     <BrowserRouter>
       <Toaster position="top-right" />
       <Navbar />
+      {/* ❌ WRONG — removes the gap */}
+      {/* <div className="pt-16"> */}
+
+      {/* ✅ CORRECT — no padding */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/login" element={<Login />} />
         <Route path="/cart" element={
-          <ProtectedRoute>
-            <Cart />
-          </ProtectedRoute>
+          <ProtectedRoute><Cart /></ProtectedRoute>
         } />
         <Route path="*" element={<NotFound />} />
       </Routes>

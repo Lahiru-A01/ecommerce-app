@@ -4,11 +4,13 @@ import { useParams } from 'react-router-dom'
 import { getProduct } from '../api/products'
 import { useCartStore } from '../store/cartStore'
 import toast from 'react-hot-toast'
+import { useCurrencyStore, formatPrice, formatPriceSub } from '../store/currencyStore'
 
 export default function ProductDetail() {
   const { id } = useParams()
   const [product, setProduct] = useState(null)
   const addItem = useCartStore(s => s.addItem)
+  const { currency } = useCurrencyStore()
 
   useEffect(() => {
     getProduct(id).then(setProduct)
@@ -30,7 +32,7 @@ export default function ProductDetail() {
             <span className="text-sm">{product.rating?.rate} ({product.rating?.count} reviews)</span>
           </div>
           <p className="text-gray-600 mb-6 leading-relaxed">{product.description}</p>
-          <p className="text-3xl font-bold mb-6">${product.price}</p>
+          <p className="text-3xl font-bold mb-6">{formatPrice(product.price, currency)}</p>
           <button onClick={() => { addItem(product); toast.success('Added to cart!') }}
             className="w-full bg-black text-white py-4 rounded-xl font-semibold hover:bg-gray-800 transition">
             Add to Cart
