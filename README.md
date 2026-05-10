@@ -1,16 +1,28 @@
-# React + Vite
+# ZYLA E-Commerce Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance, and responsive e-commerce web application specifically designed for Gen Z street fashion aesthetics.
 
-Currently, two official plugins are available:
+[**🌐 View Live Demo**](https://ecommerce-app-eight-rouge.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*   **Framework:** React.js / Next.js
+*   **Styling:** Tailwind CSS
+*   **Icons:** Lucide-React / FontAwesome
+*   **Deployment:** Vercel
 
-## Expanding the ESLint configuration
+## ✨ Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+*   **Gen Z Aesthetic:** Modern, high-contrast UI/UX tailored for Western street branding.
+*   **Dynamic Product Catalog:** Seamlessly browse, filter, and sort products.
+*   **Interactive Cart:** Real-time shopping cart management for a smooth user experience.
+*   **Fully Responsive:** Optimized for a flawless experience across mobile, tablet, and desktop.
+*   **Performance Focused:** Fast loading times with optimized image assets and component lazy loading.
+
+## 🛠️ Installation & Setup
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/Lahiru-A01/ecommerce-app.git](https://github.com/Lahiru-A01/ecommerce-app.git)
